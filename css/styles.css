@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    /* || BORDER */
+    --B0RDER-RADIUS: 7px;
+    --BORDER-COLOR: rgb(57, 130, 214);
+    --BOX-SHADOW: #aaaaaa;
+
+    /* || COLOR */
+    --BG-COLOR: rgb(57, 130, 214);
+    --COLOR: #fff;
+
+    /* || FONTS */
+    --CURSOR: pointer;
+    --FONT-SIZE: 1.2rem;
+    --FONT-WEIGHT: 700;
+
+    /* || SIZE */
+    --HEIGHT: 50px;
+    --MARGIN-TOP: 30px;
+    --MARGIN: 10px;
+    --WIDTH: 50vh;
+}
+
+body {
+    align-items: center;
+    background-color: rgb(235, 240, 245);
+    display: grid; 
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    justify-content: center; 
+}
+
+header {
+    font-size: 1.5rem; 
+    margin: var(--MARGIN-TOP) var(--MARGIN);
+    width: 400px;
+}
+
+h1 {
+    color: var(--BG-COLOR);
+    font-size: 3.5rem;
+    margin-bottom: var(--MARGIN);
+}
+
+main {
+    background-color: var(--COLOR);
+    border-radius: var(--B0RDER-RADIUS); 
+    box-shadow: 2px 2px 2px 2px var(--BOX-SHADOW);
+    display: flex;
+    flex-direction: column;
+    width: fit-content; 
+}
+
+ input {
+    background-color: whitesmoke;
+    border-radius: var(--B0RDER-RADIUS);
+    border: 1px solid rgb(224, 215, 215);
+    font-size: var(--FONT-SIZE);
+    height:  var(--HEIGHT);
+    margin: var(--MARGIN);
+    padding-left: 10px;
+    width: var(--WIDTH);
+}
+
+input:focus {
+    border-color: var(--BORDER-COLOR);
+    outline: none;
+}
+
+.log-in {
+    background-color:  var(--BG-COLOR);
+    border-radius: var(--B0RDER-RADIUS);
+    border:  var(--BORDER-COLOR);
+    color: var(--COLOR);
+    cursor: var(--CURSOR);
+    font-size: var(--FONT-SIZE);
+    font-weight: var(--FONT-WEIGHT);
+    height:  var(--HEIGHT);
+    margin: var(--MARGIN);
+    width: var(--WIDTH);
+}
+
+.forgot-password {
+    align-self: center;
+    color: var(--BORDER-COLOR);
+    cursor: var(--CURSOR);
+    margin: 15px var(--MARGIN);
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.new-account {
+    align-self: center;
+    background-color: rgb(37, 180, 8);
+    border-radius: var(--B0RDER-RADIUS);
+    border: var(--BORDER-COLOR);
+    color: var(--COLOR);
+    cursor:var(--CURSOR);
+    font-size: 1.2rem;
+    height: var(--HEIGHT);
+    margin: 20px var(--MARGIN);
+    width: 200px;
+}
+
+.new-account:hover {
+    background-color: rgb(36, 170, 9);
+}
+
+footer {
+ margin: var(--MARGIN-TOP);
+}
+
+.create-page {
+cursor: var(--CURSOR); 
+font-weight: var(--FONT-WEIGHT);
+
+}
+
+.create-page:hover {
+     text-decoration: underline; 
+    
+}
+
+@media(min-width: 900px) {
+    body {
+        grid-template-columns: auto auto;
+        margin-top: 20vh; 
+    }
+
+    header {
+        margin-bottom: 20vh;
+        margin-right: 10vh;
+     }
+}
+
+ @media (min-width: 1100px) {
+    header{
+        width: 60vh; 
+    }
+}
+    
+ @media (max-width: 900px) {
+    h1 {
+        margin-left: 7vh; 
+    }
+}
+
+
